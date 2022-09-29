@@ -24,7 +24,11 @@ header {
   justify-content: space-between;
   font-weight: 700;
   color: aliceblue;
-  background-color: rgb(8, 0, 115);
+  background-color: rgb(5, 0, 74);
+  background-image: url(images/header.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+
   height: 7vh;
   align-items: center;
   font-size: 1.3rem;
@@ -43,6 +47,7 @@ header div {
   background-size: cover;
   color: aliceblue;
   background-position: top;
+  box-shadow: rgb(195, 191, 244) 10px 10px 10px 10px;
 }
 #hero_more {
   position: relative;
