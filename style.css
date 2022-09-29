@@ -21,25 +21,23 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-between;
   font-weight: 700;
   color: aliceblue;
-  background-color: rgb(5, 0, 74);
-  background-image: url(images/header.jpg);
-  background-size: cover;
-  /* background-repeat: no-repeat; */
-
+  position: fixed;
+  width: 95%;
+  margin-right: 5%;
+  justify-content: flex-end;
   height: 7vh;
   align-items: center;
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
-header div {
+/* header div {
   margin-left: 1%;
   margin-right: 1%;
-}
+} */
 .hero {
-  background-image: url(images/hero-2.jpg);
+  background-image: url(images/hero-2-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 50vh;
@@ -47,7 +45,7 @@ header div {
   background-size: cover;
   color: aliceblue;
   background-position: top;
-  box-shadow: rgb(195, 191, 244) 10px 10px 10px 10px;
+  /* box-shadow: rgba(195, 191, 244, 0.521) 10px 10px 10px 10px; */
 }
 #hero_more {
   position: relative;
@@ -58,13 +56,24 @@ header div {
 }
 
 h1 {
-  padding-top: 1vh;
-  padding-left: 5%;
-  padding-right: 25%;
-  font-size: 2rem;
-  margin: 0%;
+  font-size: 15vw;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  text-shadow: 0 0 2px rgb(255, 206, 206);
+  text-align: center;
 }
 h2 {
+  margin-right: 17%;
+  margin-left: 17%;
+  margin-top: 0%;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+h3 {
   margin: 0%;
   padding-left: 5%;
   padding-right: 5%;
