@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  /* !typography */
+  --font-xsmall: 0.75em;
+  --font-small: 1em;
+  --font-medium: 1.333em;
+  --font-large: 1.777em;
+  --font-xlarge: 2.369em;
+  --font-xxlarge: 3.157em;
+  --font-xxxlarge: 4.209em;
+  --font-largest: 6em;
+
+  /* !card-width */
+  --main-card-width: 7.4%;
+  --font-family_primary: "Poppins", sans-serif;
+  --font-family_secondary: "clash_grotesk", sans-serif;
+}
+body {
+  margin: 0%;
+  font-family: var(--font-family_primary);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: aliceblue;
+  background-color: rgb(8, 0, 115);
+  height: 7vh;
+  align-items: center;
+  font-size: 1.3rem;
+}
+header div {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.hero {
+  background-image: url(images/hero-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  color: aliceblue;
+  background-position: top;
+}
+#hero_more {
+  position: relative;
+  top: 85%;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 1vh;
+  padding-left: 5%;
+  padding-right: 25%;
+  font-size: 2rem;
+  margin: 0%;
+}
+h2 {
+  margin: 0%;
+  padding-left: 30%;
+  padding-right: 10%;
+  padding-top: 15%;
+  text-align: right;
+  font-size: 3vw;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.my_works {
+  background: url(images/my_work_1.jpg) no-repeat,
+    url(images/my_work_2.jpg) no-repeat, url(images/my_work_3.jpg) no-repeat;
+  background-position: top, center, bottom;
+  width: 100%;
+  height: 140vh;
+  background-size: contain;
+  color: aliceblue;
+}
+/* all of my works */
+#work_1 {
+  /* display: block; */
+  background-image: url(images/hero.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 30vh;
+  display: block;
+  margin-left: 5%;
+  background-size: contain;
+  margin-top: 10vh;
+}
+#work_2 {
+  /* display: block; */
+  background-image: url(images/hero.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 30vh;
+  display: block;
+  margin-left: 5%;
+  background-size: contain;
+  margin-top: 10vh;
+}
+/* ? ANIMATIONS */
+
+.anim_up_down {
+  animation: anim_up_down 2s infinite ease-in-out;
+}
+
+@keyframes anim_up_down {
+  0% {
+    top: 90%;
+  }
+  50% {
+    top: 95%;
+  }
+  100% {
+    top: 90%;
+  }
+}
+.anim_work_left {
+  animation: anim_work_left 3s infinite linear;
+}
+
+@keyframes anim_work_left {
+  0% {
+    margin-top: 9vh;
+    margin-left: 4%;
+  }
+  25% {
+    margin-top: 8vh;
+    margin-left: 5%;
+  }
+  50% {
+    margin-top: 7vh;
+    margin-left: 4%;
+  }
+  75% {
+    margin-top: 8.3vh;
+    margin-left: 3%;
+  }
+  100% {
+    margin-top: 9vh;
+    margin-left: 4%;
+  }
+}
+
+.anim_work_right {
+  animation: anim_work_right 2.8s infinite linear;
+}
+
+@keyframes anim_work_right {
+  0% {
+    margin-top: 9vh;
+    margin-left: 44%;
+  }
+  25% {
+    margin-top: 8.3vh;
+    margin-left: 45%;
+  }
+  50% {
+    margin-top: 6.8vh;
+    margin-left: 44%;
+  }
+  75% {
+    margin-top: 8.3vh;
+    margin-left: 43%;
+  }
+  100% {
+    margin-top: 9vh;
+    margin-left: 44%;
+  }
+}
