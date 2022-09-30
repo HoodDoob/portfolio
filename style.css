@@ -24,12 +24,12 @@ header {
   font-weight: 700;
   color: aliceblue;
   position: fixed;
-  width: 95%;
+  width: 98%;
   margin-right: 5%;
   justify-content: flex-end;
   height: 7vh;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 /* header div {
@@ -40,7 +40,7 @@ header {
   background-image: url(images/hero-2-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   background-size: cover;
   color: aliceblue;
@@ -49,29 +49,41 @@ header {
 }
 #hero_more {
   position: relative;
-  top: 85%;
+  top: 5%;
+  margin-top: 26%;
   font-weight: 700;
   font-size: 1.3rem;
   text-align: center;
 }
 
 h1 {
-  font-size: 15vw;
+  /* font-size: 2.9rem; */
+  font-size: 14.5vw;
   margin-right: 2%;
   margin-left: 2%;
   margin-bottom: 0%;
-  margin-top: 0%;
+  margin-top: 5%;
   text-shadow: 0 0 2px rgb(255, 206, 206);
   text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 0%;
 }
 h2 {
-  margin-right: 17%;
-  margin-left: 17%;
+  padding-right: 35%;
+  margin-left: 3%;
+  padding-top: 10%;
   margin-top: 0%;
-  text-align: center;
-  font-size: 5vw;
+  margin-bottom: 5%;
+  font-size: 10vw;
   font-weight: 500;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: block;
 }
 h3 {
   margin: 0%;
@@ -143,18 +155,18 @@ h3 {
 /* ? ANIMATIONS */
 
 .anim_up_down {
-  animation: anim_up_down 2s infinite ease-in-out;
+  animation: anim_up_down 2s infinite ease-in-out, show_up 1.5s linear;
 }
 
 @keyframes anim_up_down {
   0% {
-    top: 90%;
+    top: 1%;
   }
   50% {
-    top: 95%;
+    top: 6%;
   }
   100% {
-    top: 90%;
+    top: 1%;
   }
 }
 .anim_work_left {
@@ -208,5 +220,41 @@ h3 {
   100% {
     margin-top: 4vh;
     margin-right: 4%;
+  }
+}
+.animation_h1 {
+  animation: show_up 0.8s linear, pop_left-right 0.5s linear;
+}
+.animation_h2 {
+  animation: show_up 0.8s linear, pop_right-left 0.5s linear;
+}
+
+@keyframes show_up {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes pop_left-right {
+  0% {
+    margin-left: -53%;
+  }
+
+  100% {
+  }
+}
+
+@keyframes pop_right-left {
+  0% {
+    right: -50%;
+  }
+
+  100% {
   }
 }
