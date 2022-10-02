@@ -18,10 +18,10 @@
 body {
   margin: 0%;
   font-family: var(--font-family_primary);
-  background-image: url(images/hero-2-2.jpg);
+  background-image: url(images/hero_final.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 130%;
+  height: 200vh;
   background-size: contain;
   color: aliceblue;
   background-position: top;
@@ -30,11 +30,12 @@ header {
   display: flex;
   color: aliceblue;
   position: fixed;
-  width: 94%;
-  margin-right: 3%;
-  margin-left: 3%;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  width: 92%;
+  height: 3vh;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 6%;
+  /* margin-bottom: 5%; */
   justify-content: space-between;
   /* height: 7vh; */
   align-items: center;
@@ -55,7 +56,7 @@ header {
 }
 #hero_more {
   position: absolute;
-  top: 100%;
+  top: 110%;
   /* margin-top: 39%; */
   font-weight: 700;
   font-size: 5vw;
@@ -65,11 +66,11 @@ header {
 
 h1 {
   /* font-size: 2.9rem; */
-  font-size: 14.5vw;
-  margin-right: 2%;
-  margin-left: 2%;
+  font-size: 13.9vw;
+  margin-right: 4%;
+  margin-left: 4%;
   margin-bottom: 0%;
-  margin-top: 0%;
+  margin-top: 6%;
   text-shadow: 0 0 2px rgb(255, 206, 206);
   text-align: center;
   letter-spacing: 2px;
@@ -81,8 +82,8 @@ h1 {
 }
 h2 {
   padding-right: 35%;
-  margin-left: 3%;
-  /* padding-top: 10%; */
+  margin-left: 4%;
+  padding-top: 4%;
   margin-bottom: 0%;
   margin-top: 0%;
   font-size: 10vw;
@@ -98,7 +99,7 @@ h3 {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 10%;
-  margin-top: 10vh;
+  margin-top: 20vh;
   text-align: center;
   font-size: 3vw;
   font-weight: 300;
@@ -236,10 +237,10 @@ h3 {
   }
 }
 .animation_h1 {
-  animation: show_up 0.8s linear, pop_left-right 0.5s linear;
+  animation: show_up 1s linear, pop_left-right 0.9s linear;
 }
 .animation_h2 {
-  animation: show_up 0.8s linear, pop_right-left 0.4s linear;
+  animation: show_up 1s linear, pop_right-left 0.7s linear;
 }
 
 @keyframes show_up {
@@ -256,7 +257,7 @@ h3 {
 
 @keyframes pop_left-right {
   0% {
-    margin-left: -150%;
+    margin-left: -200%;
     /* display: block; */
   }
 
