@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,500&display=swap");
+html {
+  font-size: 10px;
+}
 :root {
   /* !typography */
-  --font-xsmall: 0.75em;
-  --font-small: 1em;
-  --font-medium: 1.333em;
-  --font-large: 1.777em;
-  --font-xlarge: 2.369em;
-  --font-xxlarge: 3.157em;
-  --font-xxxlarge: 4.209em;
-  --font-largest: 6em;
-
-  /* !card-width */
-  --main-card-width: 7.4%;
+  --font-xsmall: 0.75rem;
+  --font-small: 1rem;
+  --font-medium: 1.333rem;
+  --font-large: 1.777rem;
+  --font-xlarge: 2.369rem;
+  --font-xxlarge: 3.157rem;
+  --font-xxxlarge: 4.209rem;
+  --font-larger: 5.61rem;
+  --font-xlarger: 7.478rem;
+  --font-largest: 9.969rem;
   --font-family_primary: "Poppins", sans-serif;
   --font-family_secondary: "clash_grotesk", sans-serif;
 }
@@ -43,12 +45,12 @@ header {
   letter-spacing: 1px;
 }
 .header_menu {
-  font-weight: 700;
-  font-size: 8vw;
+  font-weight: 400;
+  font-size: var(--font-xxlarge);
 }
 .header_logo {
   font-weight: 500;
-  font-size: 4vw;
+  font-size: var(--font-large);
 }
 .hero {
   position: relative;
@@ -67,7 +69,7 @@ header {
 
 h1 {
   /* font-size: 2.9rem; */
-  font-size: 13.9vw;
+  font-size: var(--font-larger);
   margin-right: 4%;
   margin-left: 4%;
   margin-bottom: 0%;
@@ -88,7 +90,7 @@ h2 {
   padding-top: 4%;
   margin-bottom: 0%;
   margin-top: 0%;
-  font-size: 10vw;
+  font-size: var(--font-xxlarge);
   font-weight: 400;
   line-height: 1.2;
   text-transform: uppercase;
@@ -296,5 +298,13 @@ h3 {
 
   100% {
     text-shadow: 0 0 2px rgb(255, 206, 206);
+  }
+}
+
+/* ? MEDIA QUERIES */
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 14px;
   }
 }
