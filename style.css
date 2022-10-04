@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,500&display=swap");
-html {
-  font-size: 10px;
-}
 :root {
   /* !typography */
-  --font-xsmall: 0.75rem;
-  --font-small: 1rem;
-  --font-medium: 1.333rem;
-  --font-large: 1.777rem;
-  --font-xlarge: 2.369rem;
-  --font-xxlarge: 3.157rem;
-  --font-xxxlarge: 4.209rem;
-  --font-larger: 5.61rem;
-  --font-xlarger: 7.478rem;
-  --font-largest: 9.969rem;
+  --font-xsmall: 0.75em;
+  --font-small: 1em;
+  --font-medium: 1.333em;
+  --font-large: 1.777em;
+  --font-xlarge: 2.369em;
+  --font-xxlarge: 3.157em;
+  --font-xxxlarge: 4.209em;
+  --font-largest: 6em;
+
+  /* !card-width */
+  --main-card-width: 7.4%;
   --font-family_primary: "Poppins", sans-serif;
   --font-family_secondary: "clash_grotesk", sans-serif;
 }
@@ -24,7 +22,7 @@ body {
   background-image: url(images/hero_final.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 200vh;
+  width: 100%;
   background-size: contain;
   color: aliceblue;
   background-position: top;
@@ -37,7 +35,7 @@ header {
   height: 3vh;
   margin-right: 4%;
   margin-left: 4%;
-  margin-top: 6%;
+  margin-top: 0%;
   /* margin-bottom: 5%; */
   justify-content: space-between;
   /* height: 7vh; */
@@ -46,17 +44,13 @@ header {
 }
 .header_menu {
   font-weight: 400;
-  font-size: var(--font-xxlarge);
+  font-size: 8vw;
 }
 .header_logo {
   font-weight: 500;
-  font-size: var(--font-large);
+  font-size: 4vw;
 }
-.hero {
-  position: relative;
-  top: 7vh;
-  /* box-shadow: rgba(195, 191, 244, 0.521) 10px 10px 10px 10px; */
-}
+
 #hero_more {
   position: absolute;
   top: 110%;
@@ -69,7 +63,7 @@ header {
 
 h1 {
   /* font-size: 2.9rem; */
-  font-size: var(--font-larger);
+  font-size: 13.9vw;
   margin-right: 4%;
   margin-left: 4%;
   margin-bottom: 0%;
@@ -87,10 +81,10 @@ h2 {
   font-family: "Lora";
   padding-right: 35%;
   margin-left: 4%;
-  padding-top: 4%;
+  /* padding-top: 50px; */
   margin-bottom: 0%;
-  margin-top: 0%;
-  font-size: var(--font-xxlarge);
+  padding-top: var(--font-medium);
+  font-size: 9vw;
   font-weight: 400;
   line-height: 1.2;
   text-transform: uppercase;
@@ -303,8 +297,8 @@ h3 {
 
 /* ? MEDIA QUERIES */
 
-@media only screen and (min-width: 400px) {
-  html {
-    font-size: 14px;
-  }
+@media only screen and (min-width: 450px) {
+  /* h2 {
+    padding-top: 100px;
+  } */
 }
