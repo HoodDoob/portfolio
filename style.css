@@ -19,11 +19,12 @@
 body {
   margin: 0%;
   font-family: var(--font-family_primary);
-  background-image: url(images/hero_final.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(images/hero_final.jpg); */
+
   background-position: center;
   width: 100%;
-  background-size: contain;
+
+  height: 100%;
   color: aliceblue;
   background-position: top;
 }
@@ -35,7 +36,7 @@ header {
   height: 3vh;
   margin-right: 4%;
   margin-left: 4%;
-  margin-top: 0%;
+  margin-top: 5%;
   /* margin-bottom: 5%; */
   justify-content: space-between;
   /* height: 7vh; */
@@ -50,26 +51,39 @@ header {
   font-weight: 500;
   font-size: 4vw;
 }
-
+.hero {
+  background-image: url(images/hero_final.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+}
+#wrapper_more {
+  height: 50px;
+  display: flex;
+  /* width: 100%; */
+  /* display: block; */
+}
 #hero_more {
-  position: absolute;
-  top: 110%;
-  /* margin-top: 39%; */
+  position: relative;
+  /* top: 110%; */
+  margin-top: 3%;
   font-weight: 700;
   font-size: 5vw;
   text-align: center;
   width: 100%;
+  /* height: 50px; */
 }
 
 h1 {
   /* font-size: 2.9rem; */
-  font-size: 13.9vw;
+  font-size: 12.5vw;
   margin-right: 4%;
   margin-left: 4%;
   margin-bottom: 0%;
   margin-top: 6%;
   text-shadow: 0 0 2px rgb(255, 206, 206);
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px;
   font-weight: 600;
   display: block;
@@ -81,13 +95,14 @@ h2 {
   font-family: "Lora";
   padding-right: 35%;
   margin-left: 4%;
-  /* padding-top: 50px; */
+  margin-top: 0px;
   margin-bottom: 0%;
   padding-top: var(--font-medium);
   font-size: 9vw;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
-  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
   display: block;
   position: relative;
   left: 0px;
@@ -97,7 +112,7 @@ h3 {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 10%;
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
   text-align: center;
   font-size: 3vw;
   font-weight: 300;
@@ -107,12 +122,13 @@ h3 {
 }
 
 .my_works {
-  background: url(images/my_work_1.jpg) no-repeat,
-    url(images/my_work_2.jpg) no-repeat, url(images/my_work_3.jpg) no-repeat;
+  /* background: url(images/my_work_1.jpg) no-repeat,
+    url(images/my_work_2.jpg) no-repeat, url(images/my_work_3.jpg) no-repeat; */
+  background: url(images/background_1-2.jpg) no-repeat;
   background-position: top, center, bottom;
-  width: 100%;
-  height: 140vh;
-  background-size: contain;
+  /* width: 100%; */
+  height: 100%;
+  /* background-size: contain; */
   /* overflow: visible; */
   color: aliceblue;
   /* position: absolute; */
