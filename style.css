@@ -166,6 +166,7 @@ h2 {
   padding-left: 1%;
   padding-right: 1%;
   color: var(--color-black);
+  background-color: var(--color-white);
 }
 #work_1 {
   background-image: url(images/work_a_1.jpg);
@@ -238,9 +239,10 @@ p {
   display: flex;
   font-weight: 500;
   margin-top: 0;
+  margin-right: 20px;
   justify-content: flex-end;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   position: relative;
   z-index: 2;
   color: var(--color-blue);
@@ -274,7 +276,6 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
   height: 25vh;
   position: relative;
   overflow: hidden;
@@ -324,6 +325,21 @@ p {
   font-size: var(--font-large);
   z-index: 5;
 }
+.button_image2 h3 {
+  display: flex;
+  font-size: var(--font-large);
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 #button_image_more {
   display: grid;
@@ -333,10 +349,10 @@ p {
   background-image: url(images/work_b_1.jpg);
 }
 #button_image_more_2 {
-  background-image: url(images/work_b_1.jpg);
+  background-image: url(images/work_b_2.jpg);
 }
 #button_image_more_3 {
-  background-image: url(images/work_b_1.jpg);
+  background-image: url(images/work_b_3.jpg);
 }
 .button_image_background {
   background-size: cover;
@@ -350,6 +366,44 @@ p {
   color: var(--color-white);
 }
 
+/*? ABOUT ME SECTION */
+/*? ABOUT ME SECTION */
+/*? ABOUT ME SECTION */
+
+#about {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+#about_title_wrapper {
+  padding-top: 5%;
+  position: relative;
+}
+#about_title_wrapper #title_sporo {
+  position: absolute;
+  margin: 0%;
+  left: 69%;
+  top: 36%;
+  font-size: 4vw;
+  font-weight: 400;
+  z-index: 5;
+}
+#about h1 {
+  line-height: 1;
+  margin-top: 0;
+  font-weight: 900;
+  color: var(--color-blue);
+  font-size: 16.5vw;
+}
+#about p {
+  font-weight: 500;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 6.5vw;
+  line-height: 1.5;
+  margin-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 0;
+}
 .anim_up_down {
   animation: anim_up_down 2s infinite ease-in-out, show_up 1.5s linear;
 }
