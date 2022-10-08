@@ -11,7 +11,7 @@
   --font-largest: 6em;
   --color-black: #171717;
   --color-white: #ffffff;
-  --color-blue: #0012f5;
+  --color-blue: #000cb2;
 
   /* !card-width */
   --main-card-width: 7.4%;
@@ -79,7 +79,7 @@ header {
   /* content is required when using :after */
   content: "";
   /* The grainy image */
-  background-image: url("/images/grain_b.jpg");
+  background-image: url("images/grain_b.jpg");
   /* Specify a height and width above and beyond the page header for movement */
   animation: grain 4s steps(10) infinite;
   content: "";
@@ -181,7 +181,7 @@ h2 {
 }
 .work_image:after {
   content: "";
-  background-image: url("/images/grain.jpg");
+  background-image: url("images/grain.jpg");
   animation: grain 4s steps(10) infinite;
   content: "";
   position: absolute;
@@ -424,4 +424,12 @@ p {
   /* .hero {
     height: 90vh;
   } */
+}
+
+/* TESTS */
+
+/* assing class so it becomes balck and white */
+.blackWhite {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
