@@ -19,24 +19,14 @@ const hover_blue_1 = document.querySelectorAll(".hover_blue_1");
 
 hover_blue_1.forEach((el) =>
   el.addEventListener("mouseover", (event) => {
-    console.log(event.target.classList.toggle("text_blue"));
+    event.target.classList.toggle("text_blue");
   })
 );
 
-// hover_blue_1.forEach((el) =>
-//   el.addEventListener("mouseover", (event) => {
-//     console.log((event.target.style.color = "var(--color-blue)"));
-//   })
-// );
+//   animation that changes (Sporo Wody) next to my name
 
-// const title_blue_1 = document.querySelector(".hover_blue_1");
-// const title_blue_2 = document.querySelector(".hover_blue_2");
-// title_blue_1.addEventListener("mouseover", titleBlueON);
-// title_blue_1.addEventListener("mouseleave", titleBlueOFF);
-// title_blue_2.addEventListener("mouseover", titleBlueON);
-// title_blue_2.addEventListener("mouseleave", titleBlueOFF);
+const littleSporoWody = document.querySelector("#title_sporo");
 
-// function titleBlueON(evt) {
-//   evt.target.style.color = "var(--color-blue)";
-//   console.log("unhovered");
-// }
+littleSporoWody.addEventListener("mouseover", (event) => {
+  event.target.classList.toggle("text_blue");
+});
