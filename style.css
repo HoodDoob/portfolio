@@ -30,6 +30,9 @@ body {
   color: aliceblue;
   background-position: top;
 }
+a {
+  text-decoration: none;
+}
 
 header {
   display: flex;
@@ -165,10 +168,10 @@ h2 {
   color: var(--color-black);
 }
 #work_1 {
-  background-image: url(images/work_1.png);
+  background-image: url(images/work_a_1.jpg);
 }
 #work_2 {
-  background-image: url(images/work_2.jpg);
+  background-image: url(images/work_a_2.jpg);
 }
 .work_image {
   background-size: cover;
@@ -190,9 +193,9 @@ h2 {
   top: -120%;
   left: -50%;
   opacity: 0.4;
-  /* overflow: hidden; */
   z-index: 5;
 }
+
 h3 {
   font-size: var(--font-xlarge);
   font-weight: 500;
@@ -239,7 +242,6 @@ p {
   align-items: center;
   gap: 10px;
   position: relative;
-
   z-index: 2;
   color: var(--color-blue);
 }
@@ -252,6 +254,65 @@ p {
 .white_font {
   color: var(--color-white);
   padding-top: 50px;
+}
+
+/*? SECTION BUTTONS */
+/*? SECTION BUTTONS */
+/*? SECTION BUTTONS */
+
+#butt_1 {
+  background-image: url(images/work_b_1.jpg);
+}
+#butt_2 {
+  background-image: url(images/work_b_2.jpg);
+}
+.button_image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 84%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: var(--color-white);
+}
+.button_image:after {
+  content: "";
+  background-image: url("images/grain.jpg");
+  animation: grain 4s steps(10) infinite;
+  content: "";
+  position: absolute;
+  height: 300%;
+  width: 300%;
+  top: -120%;
+  left: -50%;
+  opacity: 0.4;
+  z-index: 2;
+}
+.button_flex {
+  display: flex;
+  font-weight: 500;
+  margin-top: 0;
+  justify-content: space-between;
+  width: 84%;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+.button_flex p {
+  font-size: var(--font-large);
+}
+.button_flex .arrow_button {
+  height: 30px;
+}
+.button_image h3 {
+  margin-top: 6%;
+  font-size: var(--font-xlarge);
+  z-index: 5;
 }
 
 .anim_up_down {
