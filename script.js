@@ -1,5 +1,7 @@
 // Making pictures black and white on hover
 // var $root = $("html, body");
+// import { animate, stagger } from "https://cdn.skypack.dev/motion";
+import { inView, animate } from "https://cdn.skypack.dev/motion";
 
 const work_1 = document.querySelectorAll(".work_image");
 
@@ -49,3 +51,28 @@ document.querySelector(".header_menu").addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+
+const aboutH = document.querySelector("#about");
+inView(
+  aboutH,
+  () => {
+    animate(
+      document.querySelector("#about_title_wrapper"),
+      { opacity: 1, transform: `translate(100vw, 0vw)` },
+      { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  },
+  { amount: 0.3 }
+);
+const aboutP = document.querySelector("#about");
+inView(
+  aboutP,
+  () => {
+    animate(
+      document.querySelector("#about p"),
+      { opacity: 1, transform: `translate(-100vw, 0vw)` },
+      { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  },
+  { amount: 0.5 }
+);
