@@ -420,6 +420,19 @@ p {
 
   /* width: 100vw; */
 }
+#footer h1 {
+  line-height: 1;
+}
+
+#footer p {
+  font-weight: 500;
+  font-size: 6.5vw;
+  color: var(--color-white);
+}
+#footer a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
 .anim_up_down {
   animation: anim_up_down 2s infinite ease-in-out, show_up 1.5s linear;
 }
