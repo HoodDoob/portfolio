@@ -1,4 +1,5 @@
 // Making pictures black and white on hover
+// var $root = $("html, body");
 
 const work_1 = document.querySelectorAll(".work_image");
 
@@ -29,4 +30,22 @@ const littleSporoWody = document.querySelector("#title_sporo");
 
 littleSporoWody.addEventListener("mouseover", (event) => {
   event.target.classList.toggle("text_blue");
+});
+
+//! function that scrolls to footer
+// document.querySelector(".header_menu").addEventListener("onclick", (event) => {
+//   document.querySelector("#footer").scrollIntoView();
+// });
+
+// function scrollToFooter() {
+//   document.getElementsByTagName('h2').scrollIntoView();
+//   // will scroll to 4th h3 element
+// }
+
+document.querySelector(".header_menu").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  document.querySelector("#footer").scrollIntoView({
+    behavior: "smooth",
+  });
 });
