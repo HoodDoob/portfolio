@@ -44,35 +44,61 @@ littleSporoWody.addEventListener("mouseover", (event) => {
 //   // will scroll to 4th h3 element
 // }
 
-document.querySelector(".header_menu").addEventListener("click", function (e) {
-  e.preventDefault();
+// document.querySelector(".header_menu").addEventListener("click", function (e) {
+//   e.preventDefault();
 
-  document.querySelector("#footer").scrollIntoView({
-    behavior: "smooth",
-  });
-});
+//   document.querySelector("#footer").scrollIntoView({
+//     behavior: "smooth",
+//   });
+// });
 
-const aboutH = document.querySelector("#about");
+// const aboutH = document.querySelector("#about");
+// inView(
+//   aboutH,
+//   () => {
+//     animate(
+//       document.querySelector("#about_title_wrapper"),
+//       { opacity: 1, transform: `translate(100vw, 0vw)` },
+//       { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+//     );
+//   },
+//   { amount: 0.3 }
+// );
+// const aboutP = document.querySelector("#about");
+// inView(
+//   aboutP,
+//   () => {
+//     animate(
+//       document.querySelector("#about p"),
+//       { opacity: 1, transform: `translate(-100vw, 0vw)` },
+//       { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+//     );
+//   },
+//   { amount: 0.5 }
+// );
+
 inView(
-  aboutH,
-  () => {
+  "#about",
+  ({ target }) => {
     animate(
-      document.querySelector("#about_title_wrapper"),
-      { opacity: 1, transform: `translate(100vw, 0vw)` },
-      { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+      target.querySelector("#about_title_wrapper"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
     );
+    console.log("we there");
   },
   { amount: 0.3 }
 );
-const aboutP = document.querySelector("#about");
+
 inView(
-  aboutP,
-  () => {
+  "#about",
+  ({ target }) => {
     animate(
-      document.querySelector("#about p"),
-      { opacity: 1, transform: `translate(-100vw, 0vw)` },
-      { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
+      target.querySelector("#about p"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
     );
+    console.log("we there");
   },
-  { amount: 0.5 }
+  { amount: 0.6 }
 );

@@ -376,12 +376,14 @@ p {
 #about {
   background-color: var(--color-white);
   color: var(--color-black);
+  overflow: hidden;
 }
 #about_title_wrapper {
   padding-top: 5%;
   position: relative;
+  opacity: 1;
+  transform: translateX(-100px);
   opacity: 0;
-  left: -100vw;
 }
 #about_title_wrapper #title_sporo {
   position: absolute;
@@ -398,6 +400,7 @@ p {
   font-weight: 900;
   color: var(--color-blue);
   font-size: 16.5vw;
+  margin-right: 0;
 }
 #about p {
   font-weight: 500;
@@ -408,7 +411,9 @@ p {
   margin-top: 10%;
   padding-bottom: 10%;
   margin-bottom: 0;
-  left: 100vw;
+  transform: translateX(50%);
+  opacity: 0;
+  /* left: 10vw; */
 }
 #footer {
   background-image: url(images/contact_1.jpg);
