@@ -1,7 +1,7 @@
 // Making pictures black and white on hover
 // var $root = $("html, body");
 // import { animate, stagger } from "https://cdn.skypack.dev/motion";
-import { inView, animate } from "https://cdn.skypack.dev/motion";
+import { inView, animate, scroll } from "https://cdn.skypack.dev/motion";
 
 const work_1 = document.querySelectorAll(".work_image");
 
@@ -35,47 +35,6 @@ littleSporoWody.addEventListener("mouseover", (event) => {
 });
 
 //! function that scrolls to footer
-// document.querySelector(".header_menu").addEventListener("onclick", (event) => {
-//   document.querySelector("#footer").scrollIntoView();
-// });
-
-// function scrollToFooter() {
-//   document.getElementsByTagName('h2').scrollIntoView();
-//   // will scroll to 4th h3 element
-// }
-
-// document.querySelector(".header_menu").addEventListener("click", function (e) {
-//   e.preventDefault();
-
-//   document.querySelector("#footer").scrollIntoView({
-//     behavior: "smooth",
-//   });
-// });
-
-// const aboutH = document.querySelector("#about");
-// inView(
-//   aboutH,
-//   () => {
-//     animate(
-//       document.querySelector("#about_title_wrapper"),
-//       { opacity: 1, transform: `translate(100vw, 0vw)` },
-//       { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
-//     );
-//   },
-//   { amount: 0.3 }
-// );
-// const aboutP = document.querySelector("#about");
-// inView(
-//   aboutP,
-//   () => {
-//     animate(
-//       document.querySelector("#about p"),
-//       { opacity: 1, transform: `translate(-100vw, 0vw)` },
-//       { delay: 0, duration: 1.3, easing: [0.17, 0.55, 0.55, 1] }
-//     );
-//   },
-//   { amount: 0.5 }
-// );
 
 inView(
   "#about",
@@ -102,3 +61,18 @@ inView(
   },
   { amount: 0.6 }
 );
+// const logo_shadow = [
+//   [".header_logo", { style: "text-shadow: 2px 2px var(--color-blue)" }],
+// ];
+const progress = document.querySelector("header");
+scroll(({ y }) => {
+  progress.style.textShadow = `${y.progress.toFixed(2) * 3}px ${
+    y.progress.toFixed(4) * 3
+  }px var(--color-blue)`;
+});
+// const progress2 = document.querySelector(".header_menu");
+// scroll(({ y }) => {
+//   progress2.style.textShadow = `${y.progress2.toFixed(2) * 2.5}px ${
+//     y.progress2.toFixed(4) * 2.5
+//   }px var(--color-blue)`;
+// });

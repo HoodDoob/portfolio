@@ -18,6 +18,9 @@
   --font-family_primary: "Poppins", sans-serif;
   --font-family_secondary: "clash_grotesk", sans-serif;
 }
+a:visited {
+  color: var(--color-white);
+}
 body {
   margin: 0%;
   font-family: var(--font-family_primary);
@@ -56,10 +59,12 @@ header {
 .header_menu {
   font-weight: 300;
   font-size: 10vw;
+  /* text-shadow: 2px 2px var(--color-blue); */
 }
 .header_logo {
   font-weight: 400;
   font-size: 5vw;
+  /* text-shadow: 2px 2px var(--color-blue);  */
 }
 /*? SECTION HERO  */
 /*? SECTION HERO  */
