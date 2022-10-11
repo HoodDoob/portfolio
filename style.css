@@ -39,6 +39,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 header {
@@ -74,7 +75,7 @@ header {
 /*? SECTION HERO  */
 /*? SECTION HERO  */
 
-.hero {
+#hero {
   background-image: url(images/hero_4.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -87,7 +88,7 @@ header {
 
   /* width: 100vw; */
 }
-.hero:after {
+#hero:after {
   /* content is required when using :after */
   content: "";
   /* The grainy image */
@@ -100,7 +101,7 @@ header {
   width: 300%;
   top: -120%;
   left: -50%;
-  opacity: 0.22;
+  opacity: 0.25;
   z-index: 1;
   overflow: hidden;
 }
@@ -205,7 +206,7 @@ h2 {
   width: 300%;
   top: -120%;
   left: -50%;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: 5;
 }
 
@@ -302,7 +303,7 @@ p {
 .button_image:after,
 .button_image2:after {
   content: "";
-  background-image: url("images/grain.jpg");
+  background-image: url("images/grain_b.jpg");
   animation: grain 4s steps(10) infinite;
   content: "";
   position: absolute;
@@ -310,7 +311,7 @@ p {
   width: 300%;
   top: -120%;
   left: -50%;
-  opacity: 0.4;
+  opacity: 0.2;
   z-index: 2;
 }
 .button_flex {
@@ -617,7 +618,7 @@ p {
 /* ? MEDIA QUERIES */
 
 @media screen and (min-aspect-ratio: 3/4) {
-  .hero h2 {
+  #hero h2 {
     font-size: 5vw;
     order: 1;
     padding-top: 5%;
@@ -630,7 +631,7 @@ p {
     order: 2;
     margin: 5vw;
   }
-  .hero {
+  #hero {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -654,7 +655,7 @@ p {
     margin-top: 10vw;
     order: 3;
   }
-  .hero h2 {
+  #hero h2 {
     font-size: 4vw;
     order: 1;
     padding-top: 10vh;
@@ -670,7 +671,8 @@ p {
     gap: 5%;
     position: relative;
     height: 50vh;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
   }
   .work_image {
     height: 100%;
@@ -704,6 +706,15 @@ p {
   .header_logo {
     font-size: 25px;
   }
+  #works_smol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .button_image,
+  .button_image2,
+  .button_image_background {
+    height: 40vh;
+  }
 }
 @media screen and (min-aspect-ratio: 19/15) {
   #h1_1 {
@@ -712,7 +723,7 @@ p {
     font-size: 10vw;
     text-align: center;
   }
-  .hero h2 {
+  #hero h2 {
     font-size: 3vw;
     order: 1;
     margin-left: 5%;
@@ -721,7 +732,7 @@ p {
     margin-bottom: 300px;
     padding-top: 0;
   }
-  .hero h2 br {
+  #hero h2 br {
     display: none;
   }
   .aka {
@@ -741,6 +752,9 @@ p {
     padding-top: 5%;
     margin-bottom: 10%;
   }
+  p {
+    z-index: 10;
+  }
 }
 
 /* TESTS */
@@ -750,3 +764,29 @@ p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+#smile {
+  stroke: rgb(0, 247, 255);
+  stroke-width: 5;
+}
+.animation1 {
+  animation: test1 3s infinite linear;
+  animation-direction: alternate;
+}
+
+@keyframes test1 {
+  0% {
+    text-shadow: rgb(255 255 255) 1px 9px 20px;
+  }
+  100% {
+    text-shadow: rgb(211, 115, 115) 3px 5px 20px;
+  }
+}
+/* #header_blur {
+  position: fixed;
+  width: 100%;
+  height: 1px;
+  top: -3px;
+  box-shadow: #0002ff 0px -20px 200px 50px;
+  z-index: 6;
+} */

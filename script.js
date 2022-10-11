@@ -57,7 +57,7 @@ inView(
     );
     console.log("we there");
   },
-  { amount: 0.6 }
+  { amount: 0.4 }
 );
 
 //! function that adds blue shadow to the header
@@ -78,3 +78,10 @@ const scrollOptions = {
   offset: ["start end", "0 0.5"],
 };
 scroll(({ y }) => (logo.style.opacity = y.progress.toFixed(2)), scrollOptions);
+
+const topBlur = document.querySelector("#header_blur");
+scroll(({ y }) => {
+  topBlur.style.boxShadow = `#fff 0px -20px 150px ${
+    y.progress.toFixed(2) * 120
+  }px`;
+});
