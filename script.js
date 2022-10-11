@@ -1,6 +1,4 @@
 // Making pictures black and white on hover
-// var $root = $("html, body");
-// import { animate, stagger } from "https://cdn.skypack.dev/motion";
 import { inView, animate, scroll } from "https://cdn.skypack.dev/motion";
 
 const work_1 = document.querySelectorAll(".work_image");
@@ -34,7 +32,7 @@ littleSporoWody.addEventListener("mouseover", (event) => {
   event.target.classList.toggle("text_blue");
 });
 
-//! function that scrolls to footer
+//? function that pulls content of about
 
 inView(
   "#about",
@@ -61,18 +59,22 @@ inView(
   },
   { amount: 0.6 }
 );
-// const logo_shadow = [
-//   [".header_logo", { style: "text-shadow: 2px 2px var(--color-blue)" }],
-// ];
-const progress = document.querySelector("header");
+
+//! function that adds blue shadow to the header
+
+const header = document.querySelector("header");
 scroll(({ y }) => {
-  progress.style.textShadow = `${y.progress.toFixed(2) * 3}px ${
-    y.progress.toFixed(4) * 3
+  header.style.textShadow = `${y.progress.toFixed(1) * 3}px ${
+    y.progress.toFixed(1) * 3
   }px var(--color-blue)`;
 });
-// const progress2 = document.querySelector(".header_menu");
-// scroll(({ y }) => {
-//   progress2.style.textShadow = `${y.progress2.toFixed(2) * 2.5}px ${
-//     y.progress2.toFixed(4) * 2.5
-//   }px var(--color-blue)`;
-// });
+
+//! function that hides the logo from the landing page
+const hero = document.querySelector(".latest_work");
+const logo = document.querySelector(".header_logo");
+
+const scrollOptions = {
+  target: hero,
+  offset: ["start end", "0 0.5"],
+};
+scroll(({ y }) => (logo.style.opacity = y.progress.toFixed(2)), scrollOptions);
