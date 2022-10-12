@@ -296,6 +296,9 @@ p {
 /*? SECTION BUTTONS */
 /*? SECTION BUTTONS */
 
+#works_smol {
+  overflow: hidden;
+}
 #butt_1 {
   background-image: url(images/work_b_1.jpg);
 }
@@ -398,6 +401,14 @@ p {
   overflow: hidden;
   z-index: 1;
   color: var(--color-white);
+}
+.lToR {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.rToL {
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 /*? ABOUT ME SECTION */

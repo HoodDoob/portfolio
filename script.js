@@ -212,17 +212,28 @@ inView(
 );
 // function that pulls content in the smol buttons
 
-// inView(
-//   "#works_smol",
-//   ({ target }) => {
-//     animate(
-//       target.querySelector("butt_1"),
-//       { opacity: 1, transform: "none" },
-//       { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
-//     );
-//   },
-//   { amount: 0.1 }
-// );
+inView("#works_smol", () => {
+  document
+    .querySelectorAll(".lToR")
+    .forEach((el) =>
+      animate(
+        el,
+        { opacity: 1, transform: "none" },
+        { delay: 0.2, duration: 1.5 }
+      )
+    );
+});
+inView("#works_smol", () => {
+  document
+    .querySelectorAll(".rToL")
+    .forEach((el) =>
+      animate(
+        el,
+        { opacity: 1, transform: "none" },
+        { delay: 0.2, duration: 1.5 }
+      )
+    );
+});
 // function that pulls content in the footer
 
 inView(
