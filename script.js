@@ -69,6 +69,14 @@ const heroDesc = document.querySelectorAll(".animation_2");
 const heroTit = document.querySelectorAll(".animation_3");
 const heroAKA = document.querySelectorAll(".aka");
 
+inView("body", ({}) => {
+  animate(
+    document.querySelector(".header_menu"),
+    { opacity: 1, transform: "none" },
+    { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+  );
+  console.log("we there");
+});
 inView("#hero", () => {
   heroDesc.forEach((el) =>
     animate(
@@ -201,6 +209,43 @@ inView(
     console.log("we there");
   },
   { amount: 0.9 }
+);
+// function that pulls content in the smol buttons
+
+// inView(
+//   "#works_smol",
+//   ({ target }) => {
+//     animate(
+//       target.querySelector("butt_1"),
+//       { opacity: 1, transform: "none" },
+//       { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+//     );
+//   },
+//   { amount: 0.1 }
+// );
+// function that pulls content in the footer
+
+inView(
+  "#footer",
+  ({ target }) => {
+    animate(
+      target.querySelector("h1"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  },
+  { amount: 0.1 }
+);
+inView(
+  "#footer",
+  ({ target }) => {
+    animate(
+      target.querySelector("p"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  },
+  { amount: 0.1 }
 );
 
 //! function that adds blue shadow to the header

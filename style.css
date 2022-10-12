@@ -64,6 +64,9 @@ header {
 .header_menu {
   font-weight: 300;
   font-size: 10vw;
+  /* animation */
+  transform: translateX(200px);
+  opacity: 0;
   /* text-shadow: 2px 2px var(--color-blue); */
 }
 .header_logo {
@@ -456,6 +459,7 @@ p {
 
 #footer {
   background-image: url(images/contact_1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   padding-left: 1%;
   padding-right: 1%;
@@ -469,6 +473,10 @@ p {
 #footer h1 {
   line-height: 1;
   margin-top: 15%;
+  text-shadow: 6px 6px var(--color-black);
+  /* animation */
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 #footer p {
@@ -478,6 +486,10 @@ p {
   line-height: 1.6;
   margin-top: 20%;
   margin-right: 5%;
+  text-shadow: 2px 2px var(--color-black);
+  /* animation */
+  transform: translateX(-100%);
+  opacity: 0;
 }
 #footer a {
   color: var(--color-white);
@@ -514,57 +526,10 @@ p {
   transform: translateX(300px);
   opacity: 0;
 }
-
-@keyframes show_up {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-
-@keyframes pop_left-right {
-  0% {
-    margin-left: -200%;
-    /* display: block; */
-  }
-
-  100% {
-  }
-}
-
-@keyframes pop_right-left {
-  0% {
-    left: 300px;
-  }
-
-  100% {
-  }
-}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
-  }
-}
-.glow_logo {
-  animation: glow_logo 1.5s infinite;
-}
-
-@keyframes glow_logo {
-  0% {
-    text-shadow: 0 0 2px rgb(255, 206, 206);
-  }
-  50% {
-    text-shadow: 0 0 3px rgb(255, 206, 206);
-  }
-
-  100% {
-    text-shadow: 0 0 2px rgb(255, 206, 206);
   }
 }
 @keyframes grain {
@@ -662,9 +627,9 @@ p {
   #latest_work_wrapper2 h3 {
     font-size: 4.8vw;
   }
-  #footer {
+  /* #footer {
     height: 100%;
-  }
+  } */
 }
 @media screen and (min-aspect-ratio: 1/1) {
   #h1_1 {
@@ -754,6 +719,9 @@ p {
   #footer p {
     margin-top: 10%;
   }
+  #footer {
+    height: 100%;
+  }
 }
 @media screen and (min-aspect-ratio: 19/15) {
   #h1_1 {
@@ -812,6 +780,9 @@ p {
   }
   #works_smol h3 {
     margin-top: 15%;
+  }
+  #footer {
+    height: 100vh;
   }
 }
 
