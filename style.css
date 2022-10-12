@@ -63,16 +63,47 @@ header {
 }
 .header_menu {
   font-weight: 300;
-  font-size: 10vw;
   /* animation */
   transform: translateX(200px);
   opacity: 0;
   /* text-shadow: 2px 2px var(--color-blue); */
 }
+.header_menu p {
+  font-size: 10vw;
+}
+.header_menu a {
+  position: relative;
+  z-index: 5;
+  font-size: 10vw;
+}
 .header_logo {
   font-weight: 400;
   font-size: 5vw;
   opacity: 1;
+}
+#popup {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-black);
+  top: 0;
+  margin-top: -2%;
+  opacity: 0.9;
+}
+.popup_text {
+  position: relative;
+  display: block;
+  margin-right: 40%;
+}
+.popup_text a {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  top: 10px;
 }
 /*? SECTION HERO  */
 /*? SECTION HERO  */
@@ -167,6 +198,7 @@ h2 {
   position: relative;
   left: 0px;
   z-index: 2;
+  text-align: right;
 }
 
 #h1_2 {
@@ -267,16 +299,27 @@ p {
   line-height: 1.8;
   font-weight: 500;
 }
+.but_wr {
+  display: flex;
+  justify-content: flex-end;
+}
 .latest_see_more {
   display: flex;
   font-weight: 500;
   margin-top: 0;
   margin-right: 20px;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
   gap: 20px;
   position: relative;
   z-index: 2;
+  color: var(--color-blue);
+  margin-bottom: 10%;
+}
+.latest_see_more a {
+  color: var(--color-blue);
+}
+.but_wr a:visited {
   color: var(--color-blue);
 }
 .arrow_button {
@@ -338,24 +381,33 @@ p {
   opacity: 0.2;
   z-index: 2;
 }
+.smol_bt_wr {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-blue);
+  opacity: 0.8;
+}
 .button_flex {
   display: flex;
   font-weight: 500;
   margin-top: 0;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 84%;
   align-items: center;
   position: absolute;
   bottom: 10%;
   z-index: 5;
   height: 40px;
+  gap: 15px;
+  color: var(--color-white);
 }
 .button_flex p {
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   font-weight: 500;
 }
 .button_flex .arrow_button {
-  height: 30px;
+  height: 20px;
 }
 .button_image h3 {
   margin-top: 6%;
@@ -584,6 +636,7 @@ p {
     font-size: 5vw;
     order: 1;
     padding-top: 5%;
+    text-align: left;
   }
   #h1_1 {
     margin-top: 20vw;
@@ -705,10 +758,11 @@ p {
   .latest_see_more {
     margin-right: -10%;
     font-size: 2vw;
+    margin-bottom: 0;
   }
-  .latest_see_more p {
+  /* .latest_see_more a {
     margin: 0px;
-  }
+  } */
   .header_logo {
     font-size: 25px;
   }
@@ -778,6 +832,12 @@ p {
   .button_image2,
   .button_image_background {
     height: 50vh;
+  }
+  .button_flex p {
+    font-size: var(--font-large);
+  }
+  .button_flex .arrow_button {
+    height: 30px;
   }
 
   #footer p {

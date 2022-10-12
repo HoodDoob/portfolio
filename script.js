@@ -278,9 +278,9 @@ const scrollOptions = {
 };
 scroll(({ y }) => (logo.style.opacity = y.progress.toFixed(2)), scrollOptions);
 
-const topBlur = document.querySelector("#header_blur");
-scroll(({ y }) => {
-  topBlur.style.boxShadow = `#fff 0px -20px 150px ${
-    y.progress.toFixed(2) * 120
-  }px`;
-});
+// const topBlur = document.querySelector("#header_blur");
+// scroll(({ y }) => {
+//   topBlur.style.boxShadow = `#fff 0px -20px 150px ${
+//     y.progress.toFixed(2) * 120
+//   }px`;
+// });
