@@ -425,7 +425,7 @@ p {
 }
 #about h1 {
   line-height: 1;
-  margin-top: 0;
+  margin-top: 5%;
   font-weight: 900;
   color: var(--color-blue);
   font-size: 16.5vw;
@@ -457,26 +457,27 @@ p {
 #footer {
   background-image: url(images/contact_1.jpg);
   background-repeat: no-repeat;
-  height: 100%;
   padding-left: 1%;
   padding-right: 1%;
   background-size: cover;
   /* background-size: contain; */
   position: relative;
   overflow: hidden;
-
+  height: 100vh;
   /* width: 100vw; */
 }
 #footer h1 {
   line-height: 1;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 #footer p {
   font-weight: 500;
-  font-size: 6.5vw;
+  font-size: 5.5vw;
   color: var(--color-white);
   line-height: 1.6;
+  margin-top: 20%;
+  margin-right: 5%;
 }
 #footer a {
   color: var(--color-white);
@@ -660,6 +661,9 @@ p {
   }
   #latest_work_wrapper2 h3 {
     font-size: 4.8vw;
+  }
+  #footer {
+    height: 100%;
   }
 }
 @media screen and (min-aspect-ratio: 1/1) {

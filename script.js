@@ -171,7 +171,7 @@ inView(
     animate(
       target.querySelector("#about_title_wrapper"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -184,23 +184,23 @@ inView(
     animate(
       target.querySelector("#about_p"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
   { amount: 0.3 }
 );
 inView(
-  "#about",
-  ({ target }) => {
+  "#about_p",
+  ({}) => {
     animate(
-      target.querySelector("#about_break"),
+      document.querySelector("#about_break"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
-  { amount: 0.6 }
+  { amount: 0.9 }
 );
 
 //! function that adds blue shadow to the header
