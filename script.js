@@ -31,7 +31,73 @@ const littleSporoWody = document.querySelector("#title_sporo");
 littleSporoWody.addEventListener("mouseover", (event) => {
   event.target.classList.toggle("text_blue");
 });
+//   function that changes Kurkiewicz to sporo wody
 
+const KurToSpor = document.querySelector(".hover_blue_2");
+
+KurToSpor.addEventListener("mouseover", (event) => {
+  event.target.innerHTML = "Sporo Wody";
+});
+
+//   function that changes different words
+
+const imgToIdeas = document.querySelector(".hover_3");
+
+imgToIdeas.addEventListener("mouseover", (event) => {
+  event.target.innerHTML = "ideas";
+});
+const soundToMem = document.querySelector(".hover_4");
+
+soundToMem.addEventListener("mouseover", (event) => {
+  event.target.innerHTML = "memories";
+});
+const interToInspir = document.querySelector(".hover_5");
+
+interToInspir.addEventListener("mouseover", (event) => {
+  event.target.innerHTML = "inspirations";
+});
+const instToFears = document.querySelector(".hover_6");
+
+instToFears.addEventListener("mouseover", (event) => {
+  event.target.innerHTML = "fears";
+});
+
+//? function that starts on the landing page
+
+const heroDesc = document.querySelectorAll(".animation_2");
+const heroTit = document.querySelectorAll(".animation_3");
+const heroAKA = document.querySelectorAll(".aka");
+
+inView("#hero", () => {
+  heroDesc.forEach((el) =>
+    animate(
+      el,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5 }
+    )
+  );
+});
+inView("#hero", () => {
+  heroTit.forEach((el) =>
+    animate(
+      el,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5 }
+    )
+  );
+});
+
+inView(
+  ".latest_work",
+  () => {
+    animate(
+      heroAKA,
+      { opacity: 1 },
+      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+    );
+  },
+  { amount: 0.001 }
+);
 //? function that pulls content of about
 
 inView(

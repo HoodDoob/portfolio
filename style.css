@@ -114,6 +114,7 @@ header {
   position: relative;
   margin-right: 1%;
   z-index: 2;
+  opacity: 0;
 }
 #wrapper_more {
   height: 50px;
@@ -180,6 +181,7 @@ h2 {
   padding-right: 1%;
   color: var(--color-black);
   background-color: var(--color-white);
+  position: relative;
 }
 #work_1 {
   background-image: url(images/work_a_1.jpg);
@@ -229,7 +231,7 @@ h3 {
   z-index: 2;
   margin-top: 0%;
   padding-top: 10%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   color: black;
 }
 .hashtags {
@@ -268,7 +270,9 @@ p {
 }
 .white_font {
   color: var(--color-white);
-  padding-top: 50px;
+}
+#latest_work_wrapper2 {
+  padding-top: 10vh;
 }
 
 /*? SECTION BUTTONS */
@@ -446,6 +450,7 @@ p {
   font-weight: 500;
   font-size: 6.5vw;
   color: var(--color-white);
+  line-height: 1.6;
 }
 #footer a {
   color: var(--color-white);
@@ -467,66 +472,20 @@ p {
     transform: translateY(-10px);
   }
 }
-.anim_work_left {
-  animation: anim_work_left 3s infinite linear;
-}
-
-@keyframes anim_work_left {
-  0% {
-    margin-top: 4vh;
-    margin-left: 4%;
-  }
-  25% {
-    margin-top: 3vh;
-    margin-left: 5%;
-  }
-  50% {
-    margin-top: 2vh;
-    margin-left: 4%;
-  }
-  75% {
-    margin-top: 3vh;
-    margin-left: 3%;
-  }
-  100% {
-    margin-top: 4vh;
-    margin-left: 4%;
-  }
-}
-
-.anim_work_right {
-  animation: anim_work_right 2.8s infinite linear;
-}
-
-@keyframes anim_work_right {
-  0% {
-    margin-top: 4vh;
-    margin-right: 4%;
-  }
-  25% {
-    margin-top: 3vh;
-    margin-right: 5%;
-  }
-  50% {
-    margin-top: 2vh;
-    margin-right: 4%;
-  }
-  75% {
-    margin-top: 3vh;
-    margin-right: 3%;
-  }
-  100% {
-    margin-top: 4vh;
-    margin-right: 4%;
-  }
-}
 .animation_h1 {
   animation: show_up 1s linear, pop_left-right 0.9s linear,
     glow_logo 1.5s infinite;
   z-index: 9;
 }
-.animation_h2 {
-  animation: show_up 1s linear, pop_right-left 0.7s linear;
+.animation_2 {
+  /* animation: show_up 1s linear, pop_right-left 0.7s linear; */
+  transform: translateX(-300px);
+  opacity: 0;
+}
+.animation_3 {
+  /* animation: show_up 1s linear, pop_right-left 0.7s linear; */
+  transform: translateX(300px);
+  opacity: 0;
 }
 
 @keyframes show_up {
@@ -649,6 +608,29 @@ p {
   header {
     margin-top: 3%;
   }
+  #footer p {
+    font-size: var(--font-large);
+    margin-top: 10%;
+    margin-right: 30%;
+    padding-bottom: 10%;
+    margin-left: 10%;
+  }
+  .work_image {
+    height: 60vh;
+    width: 100%;
+  }
+  .latest_work {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  #black_background {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #latest_work_wrapper2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 @media screen and (min-aspect-ratio: 1/1) {
   #h1_1 {
@@ -665,18 +647,37 @@ p {
     order: 2;
     margin: 5%;
   }
-  #latest_work_wrapper {
+  .latest_work h2 {
+    margin-bottom: 2%;
+    padding-top: 5%;
+  }
+  .work_image {
+    height: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #latest_work_wrapper,
+  #latest_work_wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
     position: relative;
-    height: 50vh;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  #latest_work_wrapper {
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
   }
-  .work_image {
-    height: 100%;
+  #latest_work_wrapper2 {
+    padding-bottom: 10vh;
+    padding-top: 10vh;
   }
+  .latest_work {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
   h3 {
     margin-top: 0;
     font-size: 5vw;
@@ -690,18 +691,11 @@ p {
     font-size: 1.8vw;
   }
   .latest_see_more {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
     margin-right: -10%;
     font-size: 2vw;
   }
   .latest_see_more p {
     margin: 0px;
-  }
-  .white_font {
-    padding-top: 100px;
-    padding-bottom: 50px;
   }
   .header_logo {
     font-size: 25px;
@@ -710,10 +704,19 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  #works_smol h3 {
+    font-size: 4vw;
+  }
+  #works_smol .hashtags {
+    font-size: 1.5vw;
+  }
   .button_image,
   .button_image2,
   .button_image_background {
     height: 40vh;
+  }
+  #footer p {
+    margin-top: 10%;
   }
 }
 @media screen and (min-aspect-ratio: 19/15) {
@@ -750,10 +753,19 @@ p {
   .latest_work h2 {
     font-size: var(--font-largest);
     padding-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   p {
     z-index: 10;
+  }
+  #footer p {
+    font-size: var(--font-large);
+    margin-top: 10%;
+    margin-right: 40%;
+  }
+  #footer h1 {
+    font-size: 10vw;
+    margin-top: 10%;
   }
 }
 
