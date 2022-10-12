@@ -24,14 +24,15 @@ hover_blue_1.forEach((el) =>
   })
 );
 
-//   animation that changes (Sporo Wody) next to my name
+//!   animation that changes (Sporo Wody) next to my name
 
 const littleSporoWody = document.querySelector("#title_sporo");
 
 littleSporoWody.addEventListener("mouseover", (event) => {
   event.target.classList.toggle("text_blue");
 });
-//   function that changes Kurkiewicz to sporo wody
+
+// ?  function that changes Kurkiewicz to sporo wody
 
 const KurToSpor = document.querySelector(".hover_blue_2");
 
@@ -39,7 +40,7 @@ KurToSpor.addEventListener("mouseover", (event) => {
   event.target.innerHTML = "Sporo Wody";
 });
 
-//   function that changes different words
+// !  function that changes different words
 
 const imgToIdeas = document.querySelector(".hover_3");
 
@@ -98,7 +99,71 @@ inView(
   },
   { amount: 0.001 }
 );
-//? function that pulls content of about
+
+// functions for latest work section that pull different content
+
+inView(
+  ".latest_work",
+  ({ target }) => {
+    animate(
+      target.querySelector("h2"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.15 }
+);
+inView(
+  ".latest_work",
+  ({ target }) => {
+    animate(
+      target.querySelector(".work_image"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.4 }
+);
+inView(
+  ".latest_work",
+  ({ target }) => {
+    animate(
+      target.querySelector(".latest_work_text"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.5 }
+);
+inView(
+  ".latest_work2",
+  ({ target }) => {
+    animate(
+      target.querySelector(".work_image"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.4 }
+);
+inView(
+  ".latest_work2",
+  ({ target }) => {
+    animate(
+      target.querySelector(".latest_work_text"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.5 }
+);
+
+// function that pulls content of about
 
 inView(
   "#about",
@@ -117,13 +182,25 @@ inView(
   "#about",
   ({ target }) => {
     animate(
-      target.querySelector("#about p"),
+      target.querySelector("#about_p"),
       { opacity: 1, transform: "none" },
       { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
-  { amount: 0.4 }
+  { amount: 0.3 }
+);
+inView(
+  "#about",
+  ({ target }) => {
+    animate(
+      target.querySelector("#about_break"),
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 0.9, easing: [0.17, 0.55, 0.55, 1] }
+    );
+    console.log("we there");
+  },
+  { amount: 0.6 }
 );
 
 //! function that adds blue shadow to the header
