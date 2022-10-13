@@ -14,6 +14,18 @@ work_1.forEach((el) =>
   })
 );
 
+//  animation that opens and closes burger menu
+
+const burger = document.querySelector(".header_menu");
+const popup = document.querySelector("#popup");
+
+burger.addEventListener("click", animateBurger);
+function animateBurger() {
+  popup.classList.toggle("animation_popIN");
+  popup.classList.toggle("animation_popOUT");
+  popup.classList.remove("hidden");
+}
+
 // ? title animation that adds blue to each word in the title
 
 const hover_blue_1 = document.querySelectorAll(".hover_blue_1");
@@ -68,6 +80,16 @@ instToFears.addEventListener("mouseover", (event) => {
 const heroDesc = document.querySelectorAll(".animation_2");
 const heroTit = document.querySelectorAll(".animation_3");
 const heroAKA = document.querySelectorAll(".aka");
+const topSCclass = document.querySelectorAll("#top_sc .latest_see_more");
+
+inView("body", ({}) => {
+  animate(
+    topSCclass,
+    { transform: "none" },
+    { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
+  );
+  console.log("we there");
+});
 
 inView("body", ({}) => {
   animate(
@@ -263,8 +285,8 @@ inView(
 
 const header = document.querySelector("header");
 scroll(({ y }) => {
-  header.style.textShadow = `${y.progress.toFixed(1) * 3}px ${
-    y.progress.toFixed(1) * 3
+  header.style.textShadow = `${y.progress.toFixed(1) * 4}px ${
+    y.progress.toFixed(1) * 4
   }px var(--color-blue)`;
 });
 
@@ -277,6 +299,19 @@ const scrollOptions = {
   offset: ["start end", "0 0.5"],
 };
 scroll(({ y }) => (logo.style.opacity = y.progress.toFixed(2)), scrollOptions);
+
+const hideSC = {
+  target: hero,
+  offset: ["start end", "0 0.5"],
+};
+const topSC = document.querySelector("#top_sc");
+scroll(
+  ({ y }) => (
+    (topSC.style.opacity = 1 - y.progress.toFixed(2) * 2),
+    (topSC.style.zIndex = 10 - y.progress.toFixed(2) * 4)
+  ),
+  hideSC
+);
 
 // const topBlur = document.querySelector("#header_blur");
 // scroll(({ y }) => {
