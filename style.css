@@ -128,7 +128,7 @@ header {
 #popup {
   display: block;
   position: absolute;
-  width: 50%;
+  width: 49%;
   height: 45vh;
   background-color: var(--color-black);
   top: 0;
