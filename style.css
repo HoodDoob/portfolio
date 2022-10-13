@@ -48,12 +48,12 @@ body {
   text-align: right;
   letter-spacing: 1px;
   align-items: start;
+  font-size: 4vw;
 }
-
 .arrow_button3 {
-  height: 20px;
+  height: 15px;
   background-image: url(images/arrow3.svg);
-  width: 20px;
+  width: 15px;
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.2s;
@@ -89,7 +89,7 @@ header {
   display: flex;
   color: aliceblue;
   position: fixed;
-  width: 98%;
+  width: 96%;
   height: 3vh;
   margin-right: 2%;
   margin-left: 2%;
@@ -585,10 +585,11 @@ p {
 #about h1 {
   line-height: 1;
   margin-top: 5%;
+  margin-left: 2%;
   font-weight: 900;
   color: var(--color-blue);
-  font-size: 16.5vw;
-  margin-right: 0;
+  font-size: 16.1vw;
+  margin-right: 2%;
 }
 #about p {
   font-weight: 500;
@@ -815,11 +816,18 @@ p {
   #latest_work_wrapper2 h3 {
     font-size: 4.8vw;
   }
+  .arrow_button3 {
+    width: 25px;
+    height: 20px;
+  }
   /* #footer {
     height: 100%;
   } */
 }
 @media screen and (min-aspect-ratio: 1/1) {
+  #top_sc {
+    margin-top: 2%;
+  }
   #burger {
     font-size: 5vw;
   }
@@ -916,6 +924,9 @@ p {
   }
 }
 @media screen and (min-aspect-ratio: 19/15) {
+  #top_sc {
+    margin-top: 1.5%;
+  }
   #h1_1 {
     margin-top: 12%;
     order: 3;
