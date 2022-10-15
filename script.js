@@ -86,7 +86,7 @@ inView("body", ({}) => {
   animate(
     topSCclass,
     { transform: "none" },
-    { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+    { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
   );
   console.log("we there");
 });
@@ -95,18 +95,26 @@ inView("body", ({}) => {
   animate(
     document.querySelector(".header_menu"),
     { opacity: 1, transform: "none" },
-    { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+    { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
   );
   console.log("we there");
 });
 inView("#hero", () => {
   heroDesc.forEach((el) =>
-    animate(el, { opacity: 1, transform: "none" }, { delay: 0.2, duration: 1 })
+    animate(
+      el,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5 }
+    )
   );
 });
 inView("#hero", () => {
   heroTit.forEach((el) =>
-    animate(el, { opacity: 1, transform: "none" }, { delay: 0.2, duration: 1 })
+    animate(
+      el,
+      { opacity: 1, transform: "none" },
+      { delay: 0.2, duration: 1.5 }
+    )
   );
 });
 
@@ -116,7 +124,7 @@ inView(
     animate(
       heroAKA,
       { opacity: 1 },
-      { delay: 0.2, duration: 0.3, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
     );
   },
   { amount: 0.001 }
@@ -130,7 +138,7 @@ inView(
     animate(
       target.querySelector("h2"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -142,7 +150,7 @@ inView(
     animate(
       target.querySelector(".work_image"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -154,7 +162,7 @@ inView(
     animate(
       target.querySelector(".latest_work_text"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -166,7 +174,7 @@ inView(
     animate(
       target.querySelector(".work_image"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -178,7 +186,7 @@ inView(
     animate(
       target.querySelector(".latest_work_text"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -193,7 +201,7 @@ inView(
     animate(
       target.querySelector("#about_title_wrapper"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -206,7 +214,7 @@ inView(
     animate(
       target.querySelector("#about_p"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -218,7 +226,7 @@ inView(
     animate(
       document.querySelector("#about_break"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
     console.log("we there");
   },
@@ -233,7 +241,7 @@ inView("#works_smol", () => {
       animate(
         el,
         { opacity: 1, transform: "none" },
-        { delay: 0.2, duration: 1 }
+        { delay: 0.2, duration: 1.5 }
       )
     );
 });
@@ -244,7 +252,7 @@ inView("#works_smol", () => {
       animate(
         el,
         { opacity: 1, transform: "none" },
-        { delay: 0.2, duration: 1 }
+        { delay: 0.2, duration: 1.5 }
       )
     );
 });
@@ -256,7 +264,7 @@ inView(
     animate(
       target.querySelector("h1"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
   },
   { amount: 0.1 }
@@ -267,13 +275,20 @@ inView(
     animate(
       target.querySelector("p"),
       { opacity: 1, transform: "none" },
-      { delay: 0.2, duration: 1, easing: [0.17, 0.55, 0.55, 1] }
+      { delay: 0.2, duration: 1.5, easing: [0.17, 0.55, 0.55, 1] }
     );
   },
   { amount: 0.1 }
 );
 
 //! function that adds blue shadow to the header
+
+const header = document.querySelector("header");
+scroll(({ y }) => {
+  header.style.textShadow = `${y.progress.toFixed(1) * 4}px ${
+    y.progress.toFixed(1) * 4
+  }px var(--color-blue)`;
+});
 
 //! function that hides the logo from the landing page
 const hero = document.querySelector(".latest_work");
